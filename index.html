@@ -3,25 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navlinks">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#accueil">Home</a></li>
+                <li><a href="#a-propos">About</a></li>
+                <li><a href="#travail">Work</a></li>
+                <li><a href="#cv">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <p>Ceci est un paragraphe de texte.</p>
+        <section id="accueil">
+    <h1>Bienvenue sur mon portfolio</h1>
+    <p>Je suis étudiant en développement web et data engineering, passionné par la création d'applications modernes et la gestion de données.</p>
+</section>
+
+<section id="a-propos">
+    <h2>À propos</h2>
+    <p>
+        Actuellement en formation, je développe mes compétences en HTML, CSS, JavaScript ainsi qu'en bases de données (PostgreSQL, MongoDB).
+        J’aime concevoir des projets concrets allant du front-end jusqu’à la gestion des données.
+    </p>
+</section>
+
+<section id="travail">
+    <h2>Mes projets</h2>
+    <p><strong>Application de gestion de clinique :</strong> une plateforme permettant de gérer les patients, rendez-vous et consultations.</p>
+    <p><strong>Projet data engineering :</strong> conception d’une base de données universitaire avec génération massive de données et requêtes SQL.</p>
+    <p><strong>Mini projets web :</strong> création d’interfaces modernes avec HTML, CSS et JavaScript.</p>
+</section>
+
+<section id="compétences">
+    <h2>Mon parcours</h2>
+    <p><strong>Formation :</strong> Développement Web & Data Engineering - Gomycode</p>
+    <p><strong>Compétences :</strong></p>
+    <ul>
+        <li>HTML, CSS et JavaScript</li>
+        <li>SQL Server</li>
+        <li>PostgreSQL</li>
+        <li>Git/GitHub</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Vous avez un projet ou une opportunité ? Contactez-moi !</p>
+    
+    <form action="">
+        <label for="name">Nom:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+        <input type="submit" value="Envoyer">
+    </form>
+</section>
     </main>
     <footer>
-        <p>&copy; 2023 Mon site web. Tous droits réservés.</p>
+        <p>&copy; 2026 Projet HTML Gomycode</p>
     </footer>
 </body>
 </html>
