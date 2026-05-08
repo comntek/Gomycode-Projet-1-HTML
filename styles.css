@@ -1,4 +1,3 @@
-/* Reset léger */
 * {
     margin: 0;
     padding: 0;
@@ -35,6 +34,8 @@ a {
 
 a:hover {
     color: #00bcd4;
+    text-decoration: underline;
+
 }
 
 section {
@@ -76,15 +77,16 @@ input, textarea {
     font-size: 14px;
 }
 
-input[type="submit"] {
+.submit {
     background-color: #2196f3;
     color: white;
     border: none;
     cursor: pointer;
+    text-align: center;
     transition: 0.3s;
 }
 
-input[type="submit"]:hover {
+.submit:hover {
     background-color: #1976d2;
 }
 
